@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="회원가입"
+
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/idET"
+        android:hint="아이디를 입력하세요"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/pwET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/repwET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:hint="이름 입력하세요" />
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호를 입력하세요"
+        android:inputType="textPostalAddress"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/addressET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="주소를 입력하세요"
+        android:inputType="textEmailAddress"
+        android:padding="15dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/agree"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/agreeCB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동의함" />
+
+    <Button
+        android:id="@+id/joinBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입" />
+
+</LinearLayout>

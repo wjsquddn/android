@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="70dp"
+        android:src="@drawable/ic_launcher_background"/>
+    <EditText
+        android:id="@+id/IdET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/PasswordET"
+        android:hint="아이디를 입력하세요.." />
+
+    <EditText
+        android:id="@+id/PasswordET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/GoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_above="@id/login"
+        android:layout_centerInParent="true"
+        android:background="#a0000000"
+        android:text="쇼핑몰 이동" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_above="@id/join"
+        android:layout_centerInParent="true"
+        android:background="#a0000000"
+        android:text="로그인" />
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:background="#a0000000"
+        android:text="회원가입" />
+</RelativeLayout>
